@@ -1,0 +1,603 @@
+\# Program start time UTC 2026.10.16 17:22:23.235
+\# Local time Friday 16 October 2026, 11:22 pm
+\o Program:		@(#)$CDS: virtuoso version 6.1.5 12/17/2012 14:39 (cic2009lnx) $
+\o Hierarchy:		/home/buet/cadence/IC615/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.5.500.15  (32-bit addresses)
+\# Host name (type):	cadence (i686)
+\# Operating system:	Linux 2.6.32-431.3.1.el6.i686 #1 SMP Fri Jan 3 18:53:30 UTC 2014
+\# X display name (WxH):	:0.0 (2558x1398)
+\# Available geometry:			TL(0:25) BR(2557:1397)
+\# X server:			CentOS
+\# Depth of Visual (Root):	24 (24)
+\# Number of Planes Used:	24
+\# X version:		11.0 (vendor release 11300000)
+\# X resource pool:	base 0x1800000, mask 0x1fffff (2097151), shift 0
+\# 			current id 0x0, current max 0x1ffffa (2097146)
+\# Memory report:	maximum data size 4294967295 (0xffffffff) bytes
+\# Memory report:	maximum process size 4294967295 (0xffffffff) bytes
+\# Initial sbrk value:	371609600 (0x16265000) bytes
+\# Available memory:	8388700 (0x80005c) kilobytes
+\# System memory:	9237740 (0x8cf4ec) kilobytes
+\# Maximum memory size:	3965706239 (0xec5fdfff) bytes
+\# Max mem available:	3965706239 (0xec5fdfff) bytes
+\# Initial memory used:	42348544 (0x2863000) bytes
+\# Qt version:		4.5.3
+\# Window Manager:	gnome (metacity)
+\# User Name:		buet
+\o Working Directory:	cadence:/home/buet/Desktop/Workspace/cds_work
+\# Process Id:		8285
+\o 
+\o COPYRIGHT © 1992-2012  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           © 1992-2012  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\# Available memory:	8380020 (0x7fde74) kilobytes UTC 2026.10.16 17:22:23.559
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading LVS.cxt 
+\o Loading layerProc.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading dcm.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading ams.cxt 
+\o Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.00s.
+\o 
+\o ========================================
+\o Lab 3 Workspace Initialized Successfully!
+\o Design Library: /home/buet/Desktop/Workspace/LAB3 (LAB3)
+\o Simulation Dir: /home/buet/Desktop/Workspace/simulation
+\o ========================================
+\p > 
+\a ddsOpenLibManager()
+\r t
+\i ddsServOpen("LAB3" "full_adder_opt" "layout" "edit" nil)
+\o Loading le.cxt 
+\o Loading gpdk090/libInit.il ...
+\o 	Loading gpdk090/loadCxt.ile ... done!
+\o 	Loading context 'gpdk090' from library 'gpdk090' ... done!
+\o 	Loading context 'pdkUtils' from library 'gpdk090' ... done!
+\o 	Loading gpdk090/display.drf ... done!
+\o 	Loading gpdk090/gpdk090_customFilter.il ... done!
+\o 	Loading gpdk090/.simrc ... done!
+\o 	Loading gpdk090/libInitCustomExit.il ... 	Loading Environment Settings ...
+\w *WARNING* envSetVal: Can't set the value of variable 'extractVerifySubstrate',
+\w 	in tool[.partition] 'layout' - it has not been registered.
+\o 	Loading Model Management File ...
+\o Loading oasis.cxt 
+\o Loading analog.cxt 
+\o Loading asimenv.cxt 
+\o Loading spectrei.cxt 
+\o Loading relXpert.cxt 
+\o Loading hspiceD.cxt 
+\o Loading spectreinl.cxt 
+\o Loading UltraSim.cxt 
+\o Loading msgHandler.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
+\o 	Loading gpdk090/gpdk090_PDKRegistrations.il ... done!
+\o 
+\o   *************************************************************           
+\o   *              Cadence Design Systems, Inc.                 *           
+\o   *                                                           *           
+\o   *                    Generic 90nm PDK                       *           
+\o   *                        (gpdk090)                          *           
+\o   *                                                           *           
+\o   *************************************************************           
+\o 	
+\o 
+\o 	Version : 4.6
+\o 
+\o 	Build date: 10-FEB-2011
+\o 
+\o done!
+\o Loaded gpdk090/libInit.il successfully!
+\o Loading wireEdit.cxt 
+\o Loading drdEdit.cxt 
+\o Loading leToolbox.cxt 
+\o Loading treeAssistant.cxt 
+\o Load shared object file /home/buet/cadence/ASSURA41/tools.lnx86/assura/lib/libavview.so
+\# Memory report: now 148533248 (0x8da7000) bytes, UTC 2026.10.16 17:23:54.272
+\o Version:  @(#)$CDS: libavview.so version av4.1:Production:dfII6.1.4:IC6.1.4.500.10 07/01/11 03:14 (sjlin80) $
+\o Version:  Assura:6.1.4, layout editor:6.1.5
+\w *WARNING* Version of Assura and layout editor are not matched.
+\w This may lead to unexpected results.
+\o rcxui.cxt was successfully loaded
+\o Loading sna.cxt for 6.1.5 Cadence version.
+\w *WARNING* Failed to load context file '/home/buet/cadence/ASSURA41/bin/32bit/etc/context/6.1.5/sna.cxt'.
+\o Loading lo.cxt 
+\o Loading vb.cxt 
+\o Loading pte.cxt 
+\o Loading see.cxt 
+\o Loading oi.cxt 
+\o Loading techComp.cxt 
+\o Loading soi.cxt 
+\o Loading vca.cxt 
+\a when(dwindow('pteGuidePalette1) hiMapWindow(dwindow('pteGuidePalette1)))
+\r t
+\a when(dwindow('pteLayerPalette1) hiMapWindow(dwindow('pteLayerPalette1)))
+\r t
+\a when(dwindow('pteObjectPalette1) hiMapWindow(dwindow('pteObjectPalette1)))
+\r t
+\a mouseSingleSelectPt() _leiLMBPress()
+\i 5.37:7.37
+\r t
+\a hiZoomAbsoluteScale(hiGetCurrentWindow() 0.9)
+\r t
+\a _deUpdateWindowMenu('leSessionWindowMenu2 2)
+\r t
+\a vuiDRCRun()
+\o 
+\o Loading tech rule set file : /home/buet/cadence/gpdk090_v4.6/assura/techRuleSets
+\o 
+\o Loading tech rule set file : /home/buet/cadence/gpdk090_v4.6/assura/techRuleSets
+\o 
+\o Loading tech rule set file : /home/buet/cadence/gpdk090_v4.6/assura/techRuleSets
+\o 
+\o Loading tech rule set file : /home/buet/cadence/gpdk090_v4.6/assura/techRuleSets
+\o 
+\o Loading tech rule set file : /home/buet/cadence/gpdk090_v4.6/assura/techRuleSets
+\o Assura DRC: State loaded "Last"
+\p > 
+\a hiiSetCurrentForm('vuiDRCForm)
+\r t
+\a hiFormDone(vuiDRCForm)
+\o Assura DRC: State saved "Last"
+\p > 
+\a hiDBoxOK(filexistDBox)
+\r t
+\o 
+\o Loading tech rule set file : /home/buet/cadence/gpdk090_v4.6/assura/techRuleSets
+\o 
+\o Loading tech rule set file : /home/buet/cadence/gpdk090_v4.6/assura/techRuleSets
+\o 
+\o Loading tech rule set file : /home/buet/cadence/gpdk090_v4.6/assura/techRuleSets
+\o 
+\o Loading tech rule set file : /home/buet/cadence/gpdk090_v4.6/assura/techRuleSets
+\o 
+\o Loading tech rule set file : /home/buet/cadence/gpdk090_v4.6/assura/techRuleSets
+\o Compiling rules...
+\o 
+\o 
+\o 
+\o Host is 
+\o cmd  is /home/buet/cadence/ASSURA41/tools/assura/bin/assura /home/buet/Desktop/Workspace/cds_work/full_adder_opt.rsf -cdslib /home/buet/Desktop/Workspace/cds_work/cds.lib -restart -gui
+\o Starting the Assura DRC Run: IPC Id ipc:4: pid 8632.
+\r t
+\r t
+\p > 
+\a hiDBoxOK(vuiDBox)
+\r t
+\o Loading layers.cxt 
+\o Checking out license for "Assura_UI" 4.10
+\# Memory report: now 427487232 (0x197af000) bytes, UTC 2026.10.16 17:24:09.621
+\w *WARNING* No DRC errors found. 
+\p > 
+\a vuiResizeLW(list(12:1217 127:1917))
+\r t
+\a hiDBoxOK(vuiDBox)
+\r t
+\a vuiiMouseToggleLayerVisible(1)
+\r t
+\a vuiResizeLW(list(12:1217 129:1919))
+\r t
+\a vuiResizeLW(list(12:1217 148:1936))
+\r t
+\a vuiResizeLW(list(12:1217 198:1972))
+\r t
+\a vuiResizeLW(list(12:1217 326:2041))
+\r t
+\a vuiResizeLW(list(12:1217 495:2105))
+\r t
+\a vuiResizeLW(list(12:1217 676:2155))
+\r t
+\a vuiResizeLW(list(12:1217 855:2202))
+\r t
+\a vuiResizeLW(list(12:1217 999:2234))
+\r t
+\a vuiResizeLW(list(12:1217 1012:2264))
+\r t
+\a vuiResizeLW(list(12:1217 1012:2266))
+\r t
+\a vuiResizeLW(list(12:1217 1012:2265))
+\r t
+\a vuiResizeLW(list(12:1217 1012:2263))
+\r t
+\a vuiResizeLW(list(12:1217 1012:2256))
+\r t
+\a vuiResizeLW(list(12:1217 1012:2239))
+\r t
+\a vuiResizeLW(list(12:1217 1012:2226))
+\r t
+\a vuiResizeLW(list(12:1217 1012:2211))
+\r t
+\a vuiResizeLW(list(12:1217 1012:2184))
+\r t
+\a vuiResizeLW(list(12:1217 1012:2149))
+\r t
+\a vuiResizeLW(list(12:1217 1012:2111))
+\r t
+\a vuiResizeLW(list(12:1217 1012:2049))
+\r t
+\a vuiResizeLW(list(12:1217 1012:2018))
+\r t
+\a vuiResizeLW(list(12:1217 1012:2014))
+\r t
+\a vuiResizeLW(list(12:1217 1012:2012))
+\r t
+\a vuiResizeLW(list(12:1217 1012:2010))
+\r t
+\a vuiResizeLW(list(12:1217 1012:2008))
+\r t
+\a vuiResizeLW(list(12:1217 1012:2006))
+\r t
+\a vuiResizeLW(list(12:1217 1012:2004))
+\r t
+\a vuiResizeLW(list(12:1217 1012:2005))
+\r t
+\a vuiResizeLW(list(12:1217 1000:2004))
+\r t
+\a vuiResizeLW(list(12:1217 842:1986))
+\r t
+\a vuiResizeLW(list(12:1217 705:1965))
+\r t
+\a vuiResizeLW(list(12:1217 687:1959))
+\r t
+\a vuiResizeLW(list(12:1217 685:1959))
+\r t
+\a vuiResizeLW(list(12:1217 683:1959))
+\r t
+\a vuiResizeLW(list(12:1217 681:1959))
+\r t
+\a vuiResizeLW(list(12:1217 679:1959))
+\r t
+\a vuiResizeLW(list(12:1217 660:1962))
+\r t
+\a vuiResizeLW(list(12:1217 578:1962))
+\r t
+\a vuiResizeLW(list(12:1217 512:1961))
+\r t
+\a vuiResizeLW(list(12:1217 484:1959))
+\r t
+\a vuiResizeLW(list(12:1217 485:1959))
+\r t
+\a vuiResizeLW(list(12:1217 487:1959))
+\r t
+\a vuiResizeLW(list(12:1217 495:1959))
+\r t
+\a vuiResizeLW(list(12:1217 502:1959))
+\r t
+\a vuiResizeLW(list(12:1217 504:1959))
+\r t
+\a vuiResizeLW(list(12:1217 506:1959))
+\r t
+\a vuiDRCRun()
+\o 
+\o Loading tech rule set file : /home/buet/cadence/gpdk090_v4.6/assura/techRuleSets
+\o 
+\o Loading tech rule set file : /home/buet/cadence/gpdk090_v4.6/assura/techRuleSets
+\o 
+\o Loading tech rule set file : /home/buet/cadence/gpdk090_v4.6/assura/techRuleSets
+\o 
+\o Loading tech rule set file : /home/buet/cadence/gpdk090_v4.6/assura/techRuleSets
+\o 
+\o Loading tech rule set file : /home/buet/cadence/gpdk090_v4.6/assura/techRuleSets
+\o Assura DRC: State loaded "Last"
+\p > 
+\a hiFormDone(vuiDRCForm)
+\o Assura DRC: State saved "Last"
+\p > 
+\a hiDBoxOK(filexistDBox)
+\r t
+\w *WARNING* A new Assura job cannot be started when a run is currently active.
+\w Do you want to stop viewing the current job and continue?
+\w 
+\p > 
+\a hiDBoxOK(vuiDBox)
+\r t
+\o Checking in license for "Assura_UI" 4.10
+\o 
+\o Loading tech rule set file : /home/buet/cadence/gpdk090_v4.6/assura/techRuleSets
+\o 
+\o Loading tech rule set file : /home/buet/cadence/gpdk090_v4.6/assura/techRuleSets
+\o 
+\o Loading tech rule set file : /home/buet/cadence/gpdk090_v4.6/assura/techRuleSets
+\o 
+\o Loading tech rule set file : /home/buet/cadence/gpdk090_v4.6/assura/techRuleSets
+\o 
+\o Loading tech rule set file : /home/buet/cadence/gpdk090_v4.6/assura/techRuleSets
+\o Compiling rules...
+\o 
+\o function switchProc0 redefined
+\o function switchProc1 redefined
+\o function switchProc2 redefined
+\o 
+\o 
+\o Host is 
+\o cmd  is /home/buet/cadence/ASSURA41/tools/assura/bin/assura /home/buet/Desktop/Workspace/cds_work/full_adder_opt.rsf -cdslib /home/buet/Desktop/Workspace/cds_work/cds.lib -restart -gui
+\o Starting the Assura DRC Run: IPC Id ipc:7: pid 9009.
+\r t
+\r t
+\p > 
+\a hiDBoxOK(vuiDBox)
+\r t
+\o Checking out license for "Assura_UI" 4.10
+\w *WARNING* No DRC errors found. 
+\p > 
+\a vuiResizeLW(list(16:1165 510:1907))
+\r t
+\a hiDBoxOK(vuiDBox)
+\r t
+\a hiZoomInAtMouse()
+\i 4.96:2.34
+\r t
+\a hiZoomOutAtMouse()
+\i 4.96:2.35
+\r t
+\a hiZoomOutAtMouse()
+\i 4.96:2.35
+\r t
+\a hiZoomInAtMouse()
+\i 4.98:2.49
+\r t
+\a hiZoomInAtMouse()
+\i 4.98:2.49
+\r t
+\a hiZoomInAtMouse()
+\i 4.98:2.49
+\r t
+\a hiZoomInAtMouse()
+\i 5:2.51
+\r t
+\a hiZoomOutAtMouse()
+\i 5:2.51
+\r t
+\a hiZoomOutAtMouse()
+\i 5:2.51
+\r t
+\a hiZoomOutAtMouse()
+\i 5:2.5
+\r t
+\a hiZoomOutAtMouse()
+\i 4.99:2.5
+\r t
+\a hiZoomOutAtMouse()
+\i 5:2.51
+\r t
+\a hiZoomInAtMouse()
+\i 4.99:2.51
+\r t
+\a hiZoomInAtMouse()
+\i 4.99:2.51
+\r t
+\a hiZoomInAtMouse()
+\i 4.99:2.51
+\r t
+\a hiZoomInAtMouse()
+\i 4.99:2.51
+\r t
+\a hiZoomInAtMouse()
+\i 4.99:2.51
+\r t
+\a hiZoomOutAtMouse()
+\i 4.99:2.51
+\r t
+\a hiZoomOutAtMouse()
+\i 4.99:2.51
+\r t
+\a hiZoomOutAtMouse()
+\i 4.99:2.51
+\r t
+\a hiZoomOutAtMouse()
+\i 4.99:2.51
+\r t
+\a hiZoomInAtMouse()
+\i 1.65:2.72
+\r t
+\a hiZoomInAtMouse()
+\i -0.9:2.91
+\r t
+\w *WARNING* Only mouse buttons 1, 2 and 3 are supported for DrawThru.
+\a hiZoomInAtMouse()
+\i -0.94:2.9
+\w *WARNING* Unrecognized key encryption: None<DrawThru0>.
+\r t
+\w *WARNING* Only mouse buttons 1, 2 and 3 are supported for DrawThru.
+\a hiZoomOutAtMouse()
+\i -1.18:2.96
+\w *WARNING* Unrecognized key encryption: None<DrawThru0>.
+\r t
+\a hiZoomOutAtMouse()
+\i -1.17:2.96
+\r t
+\a hiZoomOutAtMouse()
+\i -1.18:2.96
+\r t
+\a hiGetCurrentWindow()->stopLevel = 0
+\r 0
+\a hiGetCurrentWindow()->stopLevel = dbGetMaxHierDepth()
+\r 32
+\a hiZoomInAtMouse()
+\i -0.98:0.83
+\r t
+\a hiZoomInAtMouse()
+\i -0.61:1.04
+\r t
+\w *WARNING* Only mouse buttons 1, 2 and 3 are supported for DrawThru.
+\a hiZoomInAtMouse()
+\i -0.5:1.11
+\w *WARNING* Unrecognized key encryption: None<DrawThru0>.
+\r t
+\w *WARNING* Only mouse buttons 1, 2 and 3 are supported for DrawThru.
+\a hiZoomOutAtMouse()
+\i 0.42:1.44
+\w *WARNING* Unrecognized key encryption: None<DrawThru0>.
+\r t
+\a hiZoomInAtMouse()
+\i 0.14:0.8
+\r t
+\a hiZoomInAtMouse()
+\i 0.11:0.82
+\r t
+\a hiZoomInAtMouse()
+\i 0.11:0.82
+\r t
+\a hiZoomOutAtMouse()
+\i 0.11:0.82
+\r t
+\a hiZoomOutAtMouse()
+\i 0.1:0.81
+\r t
+\a hiZoomOutAtMouse()
+\i -0.18:0.71
+\r t
+\a hiZoomOutAtMouse()
+\i -0.19:0.71
+\r t
+\a hiZoomInAtMouse()
+\i -0.49:1.35
+\r t
+\w *WARNING* Only mouse buttons 1, 2 and 3 are supported for DrawThru.
+\a hiZoomInAtMouse()
+\i -0.51:1.37
+\w *WARNING* Unrecognized key encryption: None<DrawThru0>.
+\r t
+\a hiZoomOutAtMouse()
+\i -0.68:1.42
+\r t
+\a hiZoomOutAtMouse()
+\i -0.69:1.41
+\r t
+\a hiZoomInAtMouse()
+\i -0.68:1.41
+\r t
+\a hiZoomInAtMouse()
+\i -0.68:1.41
+\r t
+\a hiZoomOutAtMouse()
+\i -0.68:1.41
+\r t
+\a hiZoomOutAtMouse()
+\i -0.68:1.41
+\r t
+\a hiZoomOutAtMouse()
+\i 0.89:1.95
+\r t
+\a hiZoomInAtMouse()
+\i 4.61:5.25
+\r t
+\w *WARNING* Only mouse buttons 1, 2 and 3 are supported for DrawThru.
+\a vuiLVSRun()
+\w *WARNING* Unrecognized key encryption: None<DrawThru0>.
+\o display full path...
+\p > 
+\a hiiSetCurrentForm('vuiLVSForm)
+\r t
+\a hiFormDone(vuiLVSForm)
+\p > 
+\a hiDBoxOK(vuiDBox)
+\r t
+\r t
+\a vuiLVSForm->technologyField->value="gpdk090"
+\o 
+\o Loading tech rule set file : /home/buet/cadence/gpdk090_v4.6/assura/techRuleSets
+\o 
+\o Loading tech rule set file : /home/buet/cadence/gpdk090_v4.6/assura/techRuleSets
+\o 
+\o Loading tech rule set file : /home/buet/cadence/gpdk090_v4.6/assura/techRuleSets
+\o 
+\o Loading tech rule set file : /home/buet/cadence/gpdk090_v4.6/assura/techRuleSets
+\o 
+\o Loading tech rule set file : /home/buet/cadence/gpdk090_v4.6/assura/techRuleSets
+\o 
+\o Loading tech rule set file : /home/buet/cadence/gpdk090_v4.6/assura/techRuleSets
+\o 
+\o Loading tech rule set file : /home/buet/cadence/gpdk090_v4.6/assura/techRuleSets
+\o 
+\o Loading tech rule set file : /home/buet/cadence/gpdk090_v4.6/assura/techRuleSets
+\o 
+\o Loading tech rule set file : /home/buet/cadence/gpdk090_v4.6/assura/techRuleSets
+\r "gpdk090"
+\a hiFormDone(vuiLVSForm)
+\o *INFO*: Checking whether schematic is up to date.
+\o *INFO*: Schematic integrity check is completed.
+\o Assura LVS: State saved "Last"
+\p > 
+\a hiDBoxOK(filexistDBox)
+\r t
+\o Host is 
+\o cmd  is /home/buet/cadence/ASSURA41/tools/assura/bin/assura /home/buet/Desktop/Workspace/cds_work/full_adder_opt.rsf -cdslib /home/buet/Desktop/Workspace/cds_work/cds.lib -gui
+\o Starting the Assura LVS Run: IPC Id ipc:8: pid 9356.
+\r t
+\r t
+\a hiiSetCurrentForm('tmp7)
+\r t
+\o STATUS: Schematic and Layout Mismatch
+\o 
+\o The LVS run "full_adder_opt" has completed successfully.
+\o 
+\p > 
+\a hiiSetCurrentForm('UIlvs8)
+\r t
+\a hiFormDone(UIlvs8)
+\r t
+\o Checking in license for "Assura_UI" 4.10
+\o Checking out license for "Assura_UI" 4.10
+\o Schematic cell -  full_adder_opt schematic LAB3
+\o FILE : /home/buet/Desktop/Workspace/cds_work//full_adder_opt.cel EMPTY
+\o Schematic cell -  full_adder_opt schematic LAB3
+\a vuiResizeLW(list(20:1113 514:1855))
+\r t
+\a hiResizeWindow(window(3) list(5:1109 585:1343))
+\r t
+\a hiResizeWindow(window(3) list(5:1081 605:1343))
+\r t
+\a hiResizeWindow(window(3) list(5:1026 656:1343))
+\r t
+\a hiResizeWindow(window(3) list(5:938 783:1343))
+\r t
+\a hiResizeWindow(window(3) list(5:884 886:1343))
+\r t
+\a hiResizeWindow(window(3) list(5:850 952:1343))
+\r t
+\a hiResizeWindow(window(3) list(5:844 961:1343))
+\r t
+\a hiResizeWindow(window(3) list(5:839 965:1343))
+\r t
+\a hiResizeWindow(window(3) list(5:822 982:1343))
+\r t
+\a hiResizeWindow(window(3) list(5:818 987:1343))
+\r t
+\a hiResizeWindow(window(3) list(5:816 987:1343))
+\r t
+\a hiResizeWindow(window(3) list(5:817 987:1343))
+\r t
+\a hiResizeWindow(window(3) list(5:817 986:1343))
+\r t
+\a hiResizeWindow(window(3) list(5:819 979:1343))
+\r t
+\a hiResizeWindow(window(3) list(5:823 966:1343))
+\r t
+\a hiResizeWindow(window(3) list(5:828 938:1343))
+\r t
+\a hiResizeWindow(window(3) list(5:830 919:1343))
+\r t
+\a hiResizeWindow(window(3) list(5:834 910:1343))
+\r t
+\a hiResizeWindow(window(3) list(5:836 910:1343))
+\r t
+\a hiResizeWindow(window(3) list(5:836 908:1343))
+\r t
+\a hiCloseWindow(window(3))
+\r t

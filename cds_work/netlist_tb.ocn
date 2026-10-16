@@ -1,0 +1,5 @@
+simulator('spectre)
+design("LAB3" "full_adder_tb" "schematic")
+createNetlist(?display nil)
+printf("NETLIST_LAB3_TB_OK\n")
+exit()

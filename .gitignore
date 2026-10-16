@@ -1,0 +1,7 @@
+# Cadence locks and temp files
+*.cdslck
+*.cdslck.*
+*.tmp
+*.raw/
+*.swp
+*.bak

@@ -1,0 +1,3 @@
+#!/bin/sh -f
+/home/buet/cadence/ASSURA41/tools/assura/bin/assura /home/buet/Desktop/Workspace/cds_work/full_adder_opt.rsf -cdslib /home/buet/Desktop/Workspace/cds_work/cds.lib -restart -gui
+exit $?

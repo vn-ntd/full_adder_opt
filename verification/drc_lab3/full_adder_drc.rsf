@@ -1,0 +1,16 @@
+avParameters(
+  ?inputLayout ( "df2" "LAB3" )
+  ?cellName "full_adder"
+  ?viewName "layout"
+  ?technology "gpdk090"
+  ?techLib "/home/buet/Desktop/Workspace/cds_work/assura_tech.lib"
+  ?set ("MergePinAndNet")
+  ?avrpt t
+  ?dbuPerUU 2000.0
+  ?flagNon45 t
+  ?flagOffGrid (0.005 1.0)
+  ?joinPins top
+  ?overwrite t
+  ?textPriOnly nil
+  ?userUnits "micron"
+)

@@ -1,0 +1,36 @@
+C nmos1v(MOS) nmos1v(MOS)
+N D D
+N G G
+N S S
+N B B
+
+C pmos1v(MOS) pmos1v(MOS)
+N D D
+N G G
+N S S
+N B B
+
+C "full_adder_opt schematic LAB3" "full_adder_opt layout LAB3"
+N S_b avC13
+N net40 avC14
+N Cout_b avS77
+N net29 avC15
+N net30 avC1
+N net18 avS78
+N net8 avC16
+N net44 avS79
+N net32 avC17
+N net33 avS80
+N net19 avC18
+N net10 avC27
+N A avS76
+N B avS81
+N Cin avC19
+N Cout avC28
+N S avS82
+N vdd! avC3
+N gnd! avC6
+I PC_INV avD7_2
+I PC_A1 avD7_1
+I NS_A1 avD1_1
+

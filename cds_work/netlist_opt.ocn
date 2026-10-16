@@ -1,0 +1,5 @@
+simulator('spectre)
+design("Anik" "full_adder_opt" "schematic")
+createNetlist(?display nil)
+printf("SUCCESS_NETLIST_CREATED\n")
+exit()
