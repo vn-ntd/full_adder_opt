@@ -212,12 +212,13 @@ Parasitic resistance ($R$) and capacitance ($C$) were extracted using Cadence As
 
 ### 7.1 Architecture Design: 28-Transistor Mirror CMOS Full Adder
 * **Limitations of 36T Implementation:** The conventional gate-level structure requires 36 transistors and redundant internal inverters for XOR generation, creating high routing overhead.
-* **Optimized Solution (`full_adder_opt`):** Implements the **28-Transistor Mirror CMOS Architecture**:
-  * **Symmetric Carry Generator:** Directly generates inverted carry $\overline{C_{out}}$ using a balanced 12-transistor PUN/PDN network:
+* **Optimized Solution (`full_adder_opt`):** Implements the **28-Transistor Mirror CMOS Architecture** (Rabaey Standard):
+  * **Symmetric Carry Generator (10 Transistors):** Directly generates inverted carry $\overline{C_{out}}$ using a balanced 10-transistor network (5 nMOS in PDN, 5 pMOS symmetric in PUN):
     $$\overline{C_{out}} = AB + C_{in}(A + B)$$
-  * **Shared Carry Sum Generator:** Re-uses $\overline{C_{out}}$ as an input to control a 12-transistor Sum network:
+  * **Shared Carry Sum Generator (14 Transistors):** Re-uses $\overline{C_{out}}$ as an internal control input for a 14-transistor Sum network (7 nMOS in PDN, 7 pMOS in PUN):
     $$\overline{S} = (A + B + C_{in})\overline{C_{out}} + ABC_{in}$$
-  * **Output Buffering:** 2 CMOS inverters (4 transistors) invert $\overline{S}$ and $\overline{C_{out}}$ to produce true rail-to-rail $S$ and $C_{out}$ with high drive strength.
+  * **Output Buffering (4 Transistors):** 2 CMOS inverters (2 transistors each) invert $\overline{S}$ and $\overline{C_{out}}$ to produce true rail-to-rail $S$ and $C_{out}$ with high drive strength.
+  * **Total Transistor Verification:** $10\text{T (Carry)} + 14\text{T (Sum)} + 4\text{T (Inverters)} = \mathbf{28\text{ Transistors}}$ (14 nMOS + 14 pMOS).
 
 | Design Variant | nMOS Count | pMOS Count | Total Transistors | Reduction |
 | :--- | :---: | :---: | :---: | :---: |

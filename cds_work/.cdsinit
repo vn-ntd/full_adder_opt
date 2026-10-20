@@ -1,6 +1,0 @@
-envSetVal("asimenv.startup" "projectDir" 'string "/home/buet/Desktop/Workspace/simulation")
-printf("\n========================================\n")
-printf("Lab 3 Workspace Initialized Successfully!\n")
-printf("Design Library: /home/buet/Desktop/Workspace/LAB3 (LAB3)\n")
-printf("Simulation Dir: /home/buet/Desktop/Workspace/simulation\n")
-printf("========================================\n")

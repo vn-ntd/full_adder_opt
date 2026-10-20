@@ -1,6 +1,0 @@
-Schematic                       | Layout                        | Status
--------------------------------------------------------------------------------
-full_adder_opt schematic LAB3   | full_adder_opt layout LAB3    | errors     *
-
-Mismatch between Schematic and Layout
-   1 cell with errors

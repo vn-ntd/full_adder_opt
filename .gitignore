@@ -5,3 +5,18 @@
 *.raw/
 *.swp
 *.bak
+*.log
+
+# Cadence run directories and verification logs
+cds_work/
+verification/drc_lab3/
+
+# Word reports (use markdown reports instead)
+*.docx
+
+# Binary intermediate files
+*.bcr
+*.dat
+*.erd
+*.sum
+*.lvsdb/

@@ -1,5 +1,0 @@
-; Assura generated file -- DO NOT EDIT --
-; Do NOT rely on the content of this file, it may change.
-;
-2 device net parameter pin rewire total
-1  5 (( ( S "full_adder_opt layout LAB3" )( L "full_adder_opt schematic LAB3" ) )(( 1 44 19 )( 0 25 19 )( 3 0 5 )))

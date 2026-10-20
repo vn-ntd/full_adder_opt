@@ -1,3 +1,0 @@
-*WARNING* Multiple label discarded: "gnd!" at (6.5000, -0.1000) and "Cin" on net C1.
-*WARNING* Multiple label discarded: "vdd!" at (6.5000, 3.5000) and "A" on net C3.
-*WARNING* 2 net(s) with multi-label warnings found in cell 'full_adder_opt layout LAB3'.
