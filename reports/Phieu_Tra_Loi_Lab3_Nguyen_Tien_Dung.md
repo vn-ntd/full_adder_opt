@@ -18,7 +18,7 @@
 > **Tóm tắt câu trả lời:**
 > 1. **Chứng minh hoạt động đúng:** Thực hiện quét toàn bộ $2^3 = 8$ tổ hợp đầu vào $(A, B, C_{in})$ trong miền thời gian qua mô phỏng quá độ (Transient Analysis với $VDD = 1.2\text{ V}$, $T = 80\text{ ns}$). Cả 8/8 tổ hợp trạng thái ở ngõ ra $S$ (Sum) và $C_{out}$ (Carry-out) đều đạt đúng giá trị logic theo bảng chân lý lý thuyết.
 > 2. **Đánh giá sự thay đổi sau Layout:** Trích xuất ký sinh PEX (Assura RCX - điện trở $R$ và điện dung $C$). Do xuất hiện điện dung ký sinh $C_{wire}, C_{overlap}, C_{junction}$ và điện trở dây dẫn kim loại, tốc độ mạch bị suy giảm (độ trễ $t_{pd}$ tăng thêm từ $16.5\% \sim 20\%$) và công suất tiêu thụ động trung bình tăng thêm $19.3\%$ (từ $1.413\ \mu\text{W}$ lên $1.685\ \mu\text{W}$).
-> 3. **Tối ưu hóa (Part 7):** Đề xuất kiến trúc **28T Mirror Full Adder** giúp giảm 8 transistor so với mạch ghép cổng rời 36T ban đầu; cải tiến layout 2 tầng rút ngắn chiều dài đường dây, giảm $27.67\%$ diện tích (từ $90.0\ \mu\text{m}^2$ xuống $56.05\ \mu\text{m}^2$), giảm $12.3\%$ độ trễ và tiết kiệm $26.1\%$ công suất.
+> 3. **Tối ưu hóa (Part 7):** Đề xuất kiến trúc **28T Mirror Full Adder** giúp giảm 8 transistor so với mạch ghép cổng rời 36T ban đầu; cải tiến layout 2 tầng rút ngắn chiều dài đường dây, giảm $37.72\%$ diện tích (từ $90.0\ \mu\text{m}^2$ xuống $56.05\ \mu\text{m}^2$), giảm $12.3\%$ độ trễ và tiết kiệm $26.1\%$ công suất.
 
 ---
 
@@ -264,7 +264,7 @@ $$\text{Tỷ lệ thay đổi (\%)} = \frac{\text{Giá trị sau} - \text{Giá t
 | :--- | :---: | :---: | :---: | :---: |
 | **Chiều rộng layout** | $\mu\text{m}$ | 20.0 | 14.75 | Rút ngắn $26.25\%$ |
 | **Chiều cao layout** | $\mu\text{m}$ | 4.5 | 3.8 | Giảm $15.56\%$ |
-| **Diện tích silicon** | $\mu\text{m}^2$ | **90.0** | **56.05** | **Giảm 27.67% diện tích** |
+| **Diện tích silicon** | $\mu\text{m}^2$ | **90.0** | **56.05** | **Giảm 37.72% diện tích** |
 | **Độ trễ sau PEX tại S ($t_{pLH}/t_{pHL}$)** | $\text{ps}$ | 162 / 154 | 138 / 132 | **Nhanh hơn 14.5%** |
 | **Độ trễ sau PEX tại Cout ($t_{pLH}/t_{pHL}$)** | $\text{ps}$ | 108 / 102 | 86 / 81 | **Nhanh hơn 20.5%** |
 | **Công suất trung bình sau PEX** | $\mu\text{W}$ | 1.685 | 1.245 | **Tiết kiệm 26.1% công suất** |
@@ -272,7 +272,7 @@ $$\text{Tỷ lệ thay đổi (\%)} = \frac{\text{Giá trị sau} - \text{Giá t
 | **Kiểm tra Assura LVS** | Trạng thái | Đạt (Match 100%) | Đạt (Match 100%) | Khớp sơ đồ nguyên lý |
 | **Số tổ hợp logic đúng** | — | 8 / 8 | 8 / 8 | Đạt yêu cầu |
 
-$$\text{Mức giảm diện tích (\%)} = \frac{90.0 - 56.05}{90.0} \times 100\% = 27.67\%$$
+$$\text{Mức giảm diện tích (\%)} = \frac{90.0 - 56.05}{90.0} \times 100\% = 37.72\%$$
 
 ---
 

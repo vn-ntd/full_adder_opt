@@ -18,7 +18,7 @@
 > 2. **Post-Layout Parasitic Extraction (PEX):** Extracted lumped and distributed parasitic resistance ($R$) and capacitance ($C$) using Cadence Assura RCX. Post-layout interconnect delays increased propagation latency $t_{pd}$ by $16.5\% \sim 20.0\%$ and dynamic power dissipation by $19.3\%$ ($1.413\ \mu\text{W} \rightarrow 1.685\ \mu\text{W}$).
 > 3. **Architecture Optimization (28T Mirror CMOS):** Implemented a high-performance **28-Transistor Mirror Full Adder** (`full_adder_opt`) replacing the conventional 36-transistor gate-level implementation. Using compact two-tier floorplanning and diffusion sharing:
 >    * **Transistor count reduced by 22.2%** ($36\text{T} \rightarrow 28\text{T}$).
->    * **Silicon area compacted by 27.67%** ($90.0\ \mu\text{m}^2 \rightarrow 56.05\ \mu\text{m}^2$).
+>    * **Silicon area compacted by 37.72%** ($90.0\ \mu\text{m}^2 \rightarrow 56.05\ \mu\text{m}^2$).
 >    * **Post-layout power reduced by 26.11%** ($1.685\ \mu\text{W} \rightarrow 1.245\ \mu\text{W}$).
 >    * **Assura DRC & LVS Clean (0 errors)** on Cadence GPDK 90nm.
 
@@ -244,15 +244,15 @@ Parasitic resistance ($R$) and capacitance ($C$) were extracted using Cadence As
 | **Transistor Count** | Transistors | 36 | 28 | **-22.22% (-8 Transistors)** |
 | **Layout Width** | $\mu\text{m}$ | 20.00 | 14.75 | **-26.25% narrower** |
 | **Layout Height** | $\mu\text{m}$ | 4.50 | 3.80 | **-15.56% lower** |
-| **Silicon Area** | $\mu\text{m}^2$ | **90.00** | **56.05** | **-27.67% Silicon Area** |
-| **Post-Layout Delay ($t_{pd}$ at $S$)** | ps | 162 | 138 | **+14.5% Faster** |
-| **Post-Layout Delay ($t_{pd}$ at $C_{out}$)** | ps | 108 | 86 | **+20.5% Faster** |
+| **Silicon Area** | $\mu\text{m}^2$ | **90.00** | **56.05** | **-37.72% Silicon Area** |
+| **Post-Layout Delay ($t_{pd}$ at $S$)** | ps | 162 | 138 | **+14.8% Faster** |
+| **Post-Layout Delay ($t_{pd}$ at $C_{out}$)** | ps | 108 | 86 | **+20.4% Faster** |
 | **Post-Layout Power ($P_{avg}$)** | $\mu\text{W}$ | 1.685 | 1.245 | **-26.11% Power Savings** |
 | **Assura DRC Check** | Errors | 0 | 0 | **DRC Clean (0 Errors)** |
 | **Assura LVS Check** | Status | Match 100% | Match 100% | **LVS Clean (Match 100%)** |
 | **Truth Table Compliance** | / 8 | 8 / 8 | 8 / 8 | **100% Validated** |
 
-$$\text{Area Reduction (\%)} = \frac{90.00 - 56.05}{90.00} \times 100\% = 27.67\%$$
+$$\text{Area Reduction (\%)} = \frac{90.00 - 56.05}{90.00} \times 100\% = 37.72\%$$
 $$\text{Power Savings (\%)} = \frac{1.685 - 1.245}{1.685} \times 100\% = 26.11\%$$
 
 ---
@@ -291,7 +291,7 @@ LAB3_CMOS_Full_Adder_Complete/
 
 ## 9. Conclusion
 By transitioning from a conventional gate-level structure to a custom **28T Mirror CMOS Architecture**, the 1-bit Full Adder achieved significant improvements across all three VLSI design axes:
-1. **Area:** Silicon area reduced by $27.67\%$ ($56.05\ \mu\text{m}^2$).
+1. **Area:** Silicon area reduced by $37.72\%$ ($56.05\ \mu\text{m}^2$).
 2. **Speed:** Critical path delay improved by up to $20.5\%$ ($86\text{ ps}$).
 3. **Power:** Dynamic energy consumption reduced by $26.11\%$ ($1.245\ \mu\text{W}$).
 Both physical layouts (`full_adder` and `full_adder_opt`) are fully verified and DRC/LVS clean under Cadence Assura with GPDK 90nm foundry rules.
