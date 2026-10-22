@@ -18,7 +18,7 @@
 > **Tóm tắt lời giải và kết quả nghiệm thu:**
 > 1. **Chứng minh hoạt động đúng:** Thực hiện quét toàn bộ $2^3 = 8$ tổ hợp đầu vào nhị phân $(A, B, C_{in})$ trong miền thời gian qua mô phỏng quá độ (Transient Analysis trên Cadence Spectre với $VDD = 1.2\text{ V}$, $T = 80\text{ ns}$). Cả 8/8 trạng thái ngõ ra $S$ (Sum) và $C_{out}$ (Carry-out) đều đạt đúng tuyệt đối $100\%$ theo bảng chân lý lý thuyết.
 > 2. **Đánh giá suy hao sau Layout (PEX):** Trích xuất ký sinh bằng Assura RCX (điện trở $R$ và điện dung $C$). Do xuất hiện điện dung ký sinh phân bố $C_{wire}, C_{overlap}, C_{junction}$ và điện trở dây kim loại, độ trễ lan truyền $t_{pd}$ tăng thêm từ $16.5\% \sim 20.0\%$ và công suất tiêu thụ trung bình tăng $19.3\%$ (từ $1.413\ \mu\text{W}$ lên $1.685\ \mu\text{W}$).
-> 3. **Tối ưu hóa (Phần 7):** Đề xuất kiến trúc **28T Mirror Full Adder** giúp cắt giảm 8 transistor so với mạch ghép 36T ban đầu; kỹ thuật bố trí layout 2 tầng chia sẻ vùng khuếch tán giúp giảm $27.67\%$ diện tích silicon (từ $90.0\ \mu\text{m}^2$ xuống $56.05\ \mu\text{m}^2$), giảm $12.3\%$ độ trễ và tiết kiệm $26.1\%$ công suất sau trích xuất.
+> 3. **Tối ưu hóa (Phần 7):** Đề xuất kiến trúc **28T Mirror Full Adder** giúp cắt giảm 8 transistor so với mạch ghép 36T ban đầu; kỹ thuật bố trí layout 2 tầng chia sẻ vùng khuếch tán giúp giảm $37.72\%$ diện tích silicon (từ $90.0\ \mu\text{m}^2$ xuống $56.05\ \mu\text{m}^2$), giảm $12.3\%$ độ trễ và tiết kiệm $26.1\%$ công suất sau trích xuất.
 
 ---
 
@@ -254,7 +254,7 @@ Sử dụng công cụ **Cadence Assura RCX** trên công nghệ GPDK 90nm để
 | :--- | :---: | :---: | :---: | :---: |
 | **Chiều rộng layout** | $\mu\text{m}$ | 20.0 | 14.75 | Rút ngắn $26.25\%$ |
 | **Chiều cao layout** | $\mu\text{m}$ | 4.5 | 3.8 | Giảm $15.56\%$ |
-| **Diện tích silicon** | $\mu\text{m}^2$ | **90.0** | **56.05** | **Giảm 27.67% diện tích** |
+| **Diện tích silicon** | $\mu\text{m}^2$ | **90.0** | **56.05** | **Giảm 37.72% diện tích** |
 | **Độ trễ sau PEX tại S ($t_{pLH}/t_{pHL}$)** | $\text{ps}$ | 162 / 154 | 138 / 132 | **Nhanh hơn 14.5%** |
 | **Độ trễ sau PEX tại Cout ($t_{pLH}/t_{pHL}$)** | $\text{ps}$ | 108 / 102 | 86 / 81 | **Nhanh hơn 20.5%** |
 | **Công suất trung bình sau PEX** | $\mu\text{W}$ | 1.685 | 1.245 | **Tiết kiệm 26.1% công suất** |
@@ -262,11 +262,11 @@ Sử dụng công cụ **Cadence Assura RCX** trên công nghệ GPDK 90nm để
 | **Kiểm tra Assura LVS** | Trạng thái | Đạt (Match 100%) | Đạt (Match 100%) | Khớp sơ đồ nguyên lý |
 | **Số tổ hợp logic đúng** | — | 8 / 8 | 8 / 8 | Đạt yêu cầu |
 
-$$\text{Mức giảm diện tích (\%)} = \frac{90.0 - 56.05}{90.0} \times 100\% = 27.67\%$$
+$$\text{Mức giảm diện tích (\%)} = \frac{90.0 - 56.05}{90.0} \times 100\% = 37.72\%$$
 $$\text{Mức tiết kiệm công suất (\%)} = \frac{1.685 - 1.245}{1.685} \times 100\% = 26.11\%$$
 
 ### 7.4 Đánh giá tổng thể
-1. **Tác động của thay đổi layout:** Layout cải tiến nhờ chia sẻ vùng khuếch tán và rút ngắn đường dây đã giảm diện tích được $27.67\%$. Khi đường dây kim loại ngắn lại, điện trở dây $R_{wire}$ và điện dung ký sinh $C_{wire}$ giảm theo, giúp cải thiện tốc độ mạch (độ trễ giảm $\approx 12\% - 20\%$) và giảm công suất tiêu thụ động xuống còn $1.245\ \mu\text{W}$.
+1. **Tác động của thay đổi layout:** Layout cải tiến nhờ chia sẻ vùng khuếch tán và rút ngắn đường dây đã giảm diện tích được $37.72\%$. Khi đường dây kim loại ngắn lại, điện trở dây $R_{wire}$ và điện dung ký sinh $C_{wire}$ giảm theo, giúp cải thiện tốc độ mạch (độ trễ giảm $\approx 12\% - 20\%$) và giảm công suất tiêu thụ động xuống còn $1.245\ \mu\text{W}$.
 2. **Lựa chọn phương án cuối cùng:** Phương án layout tối ưu cải thiện toàn diện cả 3 tiêu chí: Diện tích (giảm $27.7\%$), Tốc độ (nhanh hơn $15\% - 20\%$) và Công suất (tiết kiệm $26.1\%$), mạch hoạt động chính xác 8/8 tổ hợp logic.
 
 ---
